@@ -1,0 +1,52 @@
+site_name: ai-job-search-assistant
+repo_url: https://github.com/jryusuf/ai-job-search-assistant
+site_url: https://jryusuf.github.io/ai-job-search-assistant
+site_description: This is a project helps you repetitive tasks during your job search searching, filtering and analyzing job listings with ai and keep track of your applications and give you suggestions based on jobs found in the past
+site_author: Yusuf Yuksel
+edit_uri: edit/main/docs/
+repo_name: jryusuf/ai-job-search-assistant
+copyright: Maintained by <a href="https://jryusuf.com">jryusuf</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [ai_job_seach_assistant]
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jryusuf/ai-job-search-assistant
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/ai-job-search-assistant
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
